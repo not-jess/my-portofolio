@@ -40,10 +40,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 isScrollingFromClick = false;
                 window.addEventListener('scroll', toggleNavbarOnScroll);
                 // Manually add scrolled-down to hide the navbar after clicking
-                if (!el_autohide.classList.contains('near-top')) {
-                    el_autohide.classList.remove('scrolled-up');
-                    el_autohide.classList.add('scrolled-down');
-                }
+                el_autohide.classList.remove('scrolled-up');
+                el_autohide.classList.add('scrolled-down');
             }, 750); // Adjust timeout duration as needed based on scroll duration
         });
     });
