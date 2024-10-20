@@ -19,7 +19,8 @@
 
 <body class="bg-dark text-white">
     <header>
-        <nav class="position-fixed top-0 start-0 end-0 w-100 autohide navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="position-fixed top-0 start-0 end-0 w-100 autohide navbar navbar-expand-lg navbar-dark bg-dark"
+            style="z-index: 1;">
             <div class="container-fluid">
                 <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -45,152 +46,244 @@
             </div>
         </nav>
     </header>
-    <div id="content" class="px-2 px-lg-5">
-        <main>
-            <section id="introduction" class="container-fluid d-flex align-items-center justify-content-center py-5 min-vh-100">
-                <div class="container mt-5 mt-xl-0">
-                    <div class="row">
-                        <div class="col-lg-6 d-flex justify-content-center">
-                            <img src="assets/images/me.jpeg" alt="Jessee Ryan Jacob Rompas Effendi"
-                                class="border border-2 border-info rounded-circle img-fluid w-75">
-                        </div>
-                        <div class="col-lg-6 d-flex flex-column justify-content-center pt-5 pt-lg-0 intro-pe-11em">
-                            <h6 class="text-light">Hello, my name is</h6>
-                            <h2 class="text-lighter fw-bold">Jessee Ryan Jacob Rompas Effendi</h2>
-                            <h5 class="text-info fw-bold">Student/Aspiring Programmer</h5>
-                            <p class="text-primary">
-                                I'm currently a 3rd year student at Binus University (Jakarta) majoring in Computer
-                                Science/Software Engineering.
-                            </p>
-                        </div>
+    <main>
+        <section id="introduction"
+            class="container-fluid py-5 px-md-5 min-vh-100 d-flex align-items-center justify-content-center">
+            <div class="container mt-5 mt-xl-0">
+                <div class="row">
+                    <div class="col-lg-6 d-flex justify-content-center">
+                        <img src="assets/images/me.jpeg" alt="Jessee Ryan Jacob Rompas Effendi"
+                            class="border border-2 border-info rounded-circle img-fluid w-75">
+                    </div>
+                    <div class="col-lg-6 d-flex flex-column justify-content-center pt-5 pt-lg-0 ">
+                        <h6 class="text-light">Hello, my name is</h6>
+                        <h2 class="text-lighter fw-bold w-75">Jessee Ryan Jacob Rompas Effendi</h2>
+                        <h5 class="text-info fw-bold">Student/Aspiring Programmer</h5>
+                        <p class="text-primary">
+                            I'm currently a 3rd year student at Binus University (Jakarta) majoring in Computer
+                            Science/Software Engineering.
+                        </p>
                     </div>
                 </div>
-            </section>
-            <section id="about" class="container-fluid py-5 px-md-5 min-vh-100">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 text-start">
-                            <h3 class="text-lighter fw-bold">About Me</h3>
-                        </div>
-                        <hr style="width:55%" class="me-auto">
-                        <div class="col-lg-6 me-auto text-start">
-                            <p class="text-primary">
-                                Hello! My name is Jessee and I'm someone with a passion for programming and
-                                all things Computer Science. I've always enjoyed playing with computers from an early age.
-                                However it wasn't until high school that I had my first engaging IT class, where I was 
-                                finally introduced to the wider world of Computer Science, from <code class="fs-6">C</code> 
-                                to Cyber <code class="fs-6">C</code>-curity. There, I built my first (basic) Calculator 
-                                web app using <code class="fs-6">HTML</code>, <code class="fs-6">CSS</code>, and 
-                                <code class="fs-6">JavaScript</code>, and I've been hooked ever since.   
-                            </p>
-                            <!-- <p class="text-primary">
+            </div>
+        </section>
+        <section id="about" class="container-fluid py-5 px-md-5 min-vh-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-start">
+                        <h3 class="text-lighter fw-bold">About Me</h3>
+                        <hr class="w-50 me-auto">
+                    </div>
+                    <div class="col-lg-6 me-auto text-start">
+                        <p class="text-primary">
+                            Hello! My name is Jessee and I'm someone with a passion for programming and
+                            all things Computer Science. I've always enjoyed playing with computers from an early
+                            age.
+                            However it wasn't until high school that I had my first engaging IT class, where I was
+                            finally introduced to the wider world of Computer Science, from <code class="fs-6">C</code>
+                            to Cyber <code class="fs-6">C</code>-curity. There, I built my first (basic) Calculator
+                            web app using <code class="fs-6">HTML</code>, <code class="fs-6">CSS</code>, and
+                            <code class="fs-6">JavaScript</code>, and I've been hooked ever since.
+                        </p>
+                        <!-- <p class="text-primary">
                                 My other interests include reading (novel, manga, manhwa), watching movies, and
                                 especially listening to music. I also enjoy playing board/puzzle games, such as Chess,
                                 Sudoku, and Wordle, as well as keeping up with the NBA.
                             </p> -->
-                            <p class="text-primary">
-                                My main area of expertise is in Front-End Development, but I'm also familiar with
-                                Back-End Development. I'm currently learning more about Full-Stack Development and Mobile Development.
-                                I'm also interested in learning more about system administration.
-                            </p>
-                        </div>
-                        <div class="col-lg-6 d-flex justify-content-center flex-column py-2">
-                            <h6 class="text-info text-center fw-bold mb-1">
-                                Technologies I'm familiar with:
-                            </h6>
-                            <div class="d-flex justify-content-center flex-column">
-                                <div class="d-flex justify-content-center my-3 flex-wrap-mobile">
-                                    <img src="assets/images/html.png" alt="HTML" class="img-fluid mx-3 mt-3 mt-sm-1 tech-logo">
-                                    <img src="assets/images/css.png" alt="CSS" class="img-fluid mx-3 mt-3 mt-sm-1 tech-logo">
-                                    <img src="assets/images/js.png" alt="JavaScript" class="img-fluid mx-3 my-3 my-sm-0 mt-sm-1 tech-logo">
-                                    <img src="assets/images/bootstrap.png" alt="Bootstrap" class="img-fluid mx-3 mt-4 mt-sm-auto tech-logo" style="height: 55px!important;">
-                                </div>                            
-                                <div class="d-flex justify-content-center my-3 flex-wrap-mobile">
-                                    <img src="assets/images/c.png" alt="C" class="img-fluid mx-3 mt-3 mt-sm-1 tech-logo">
-                                    <img src="assets/images/cpp.png" alt="C++" class="img-fluid mx-3 mt-3 mt-sm-1 tech-logo">
-                                    <img src="assets/images/csharp.png" alt="C#" class="img-fluid mx-3 my-3 my-sm-0 mt-sm-1  tech-logo">
-                                    <img src="assets/images/python.png" alt="Python" class="img-fluid mx-3 mt-3 mt-sm-1 tech-logo">
-                                    <img src="assets/images/java.png" alt="Java" class="img-fluid mx-3 mt-3 mt-sm-1 tech-logo">
-                                </div>
-                                <div class="d-flex justify-content-center my-3 flex-wrap-mobile">
-                                    <img src="assets/images/asp.net.png" alt="ASP.NET" class="img-fluid me-3 mt-3 mt-sm-1 tech-logo">
-                                    <img src="assets/images/mysql.png" alt="MySQL" class="img-fluid ms-3 mt-3 mt-sm-1 tech-logo">
-                                </div>
-                                <!-- <div class="d-flex justify-content-start">
-                                    <img src="assets/images/git.png" alt="Git" class="img-fluid">
+                        <p class="text-primary">
+                            My main area of expertise is in Front-End Development, but I'm also familiar with
+                            Back-End Development. I'm currently learning more about Full-Stack Development and
+                            Mobile Development.
+                            I'm also interested in learning more about system administration.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-center flex-column py-2">
+                        <h6 class="text-info text-center fw-bold mb-1">
+                            Technologies I'm familiar with:
+                        </h6>
+                        <div class="d-flex justify-content-center flex-column">
+                            <div class="d-flex justify-content-center my-1 my-sm-3 flex-wrap-mobile">
+                                <img src="assets/images/html.png" alt="HTML"
+                                    class="img-fluid mx-3 mt-3 mt-sm-1 tech-logo">
+                                <img src="assets/images/css.png" alt="CSS"
+                                    class="img-fluid mx-3 mt-3 mt-sm-1 tech-logo">
+                                <img src="assets/images/js.png" alt="JavaScript"
+                                    class="img-fluid mx-3 my-3 my-sm-0 mt-sm-1 tech-logo">
+                                <img src="assets/images/bootstrap.png" alt="Bootstrap"
+                                    class="img-fluid mx-3 mt-4 mt-sm-auto tech-bootstrap">
+                            </div>
+                            <div class="d-flex justify-content-center my-1 my-sm-3 flex-wrap-mobile">
+                                <img src="assets/images/c.png" alt="C" class="img-fluid mx-3 mt-3 mt-sm-1 tech-logo">
+                                <img src="assets/images/cpp.png" alt="C++"
+                                    class="img-fluid mx-3 mt-3 mt-sm-1 tech-logo">
+                                <img src="assets/images/csharp.png" alt="C#"
+                                    class="img-fluid mx-3 my-3 my-sm-0 mt-sm-1  tech-logo">
+                                <img src="assets/images/python.png" alt="Python"
+                                    class="img-fluid mx-3 mt-3 mt-sm-1 tech-logo">
+                                <img src="assets/images/java.png" alt="Java"
+                                    class="img-fluid mx-3 mt-3 mt-sm-1 tech-logo">
+                            </div>
+                            <div class="d-flex justify-content-center my-1 my-sm-3 flex-wrap-mobile">
+                                <img src="assets/images/asp.net.png" alt="ASP.NET"
+                                    class="img-fluid mx-3 mt-3 mt-sm-1 tech-logo">
+                                <img src="assets/images/mysql.png" alt="MySQL"
+                                    class="img-fluid mx-3 mt-3 mt-sm-1 tech-logo">
+                                <img src="assets/images/git.png" alt="Git"
+                                    class="img-fluid mx-3 mt-3 mt-sm-1 tech-logo">
+                            </div>
+                            <!-- <div class="d-flex justify-content-start">
                                     <img src="assets/images/github.png" alt="GitHub" class="img-fluid">
                                     <img src="assets/images/vscode.png" alt="Visual Studio Code" class="img-fluid">
                                     <img src="assets/images/figma.png" alt="Figma" class="img-fluid">
                                 </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="experience" class="container-fluid py-5 px-md-5 min-vh-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-end">
+                        <h3 class="text-lighter fw-bold">Experiences</h3>
+                        <hr class="w-50 ms-auto">
+                    </div>
+                    <div class="col-lg-6 ms-auto text-end">
+                        <p class="text-primary font-italic">
+                            To be experienced.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="work" class="container-fluid py-5 px-md-5 min-vh-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-start">
+                        <h3 class="text-lighter fw-bold">Works</h3>
+                        <hr class="w-50 me-auto">
+                    </div>
+                </div>
+                <div id="carouselWorksControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner d-flex align-items-center" style="width:100%; height: 500px!important;">
+                        <div class="carousel-item active">
+                            <div class="container">
+                                <div class="row align-items-center">
+                                    <div class="col-md-6 d-flex justify-content-center">
+                                        <img src="assets/images/gymme.png" alt="GymMe"
+                                            class="border border-2 border-info img-fluid w-75">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h5 class="text-info">
+                                            GymMe
+                                        </h5>
+                                        <p class="text-primary">
+                                            GymMe is a web-based health and supplement-selling application developed
+                                            using <code class="fs-6">ASP.NET</code> with a <code
+                                                class="fs-6">Domain-Driven Design</code> approach. The application's
+                                            architecture is structured into distinct layers, including View, Controller,
+                                            and Repository, Factory, and Model. These layers work
+                                            together to manage UI display, data validation, business logic, database
+                                            interaction, and complex object creation. The application supports
+                                            role-based access for admin, customer, and guest users, offering
+                                            functionalities for account management, product handling, and transaction
+                                            processing.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row align-items-center">
+                                    <div class="col-md-6 d-flex justify-content-center">
+                                        <img src="assets/images/hitoyz.png" alt="Hi-Toyz"
+                                            class="border border-2 border-info img-fluid w-75">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h5 class="text-info">
+                                            Hi-Toyz
+                                        </h5>
+                                        <p class="text-primary">
+                                            Hi-Toyz is a responsive toy store website developed using <code
+                                                class="fs-6">HTML</code>, <code class="fs-6">CSS</code>, and
+                                            <code class="fs-6">JavaScript</code>. The website includes features like
+                                            navigation menus for both mobile and desktop views, product showcases, and
+                                            interactive elements such as an expandable mobile menu.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row align-items-center">
+                                    <div class="col-md-6 d-flex justify-content-center">
+                                        <img src="assets/images/cateringhub.png" alt="CateringHub"
+                                            class="border border-2 border-info img-fluid w-75">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h5 class="text-info">
+                                            CateringHub
+                                        </h5>
+                                        <p class="text-primary">
+                                            CateringHub is a responsive website built with <code
+                                                class="fs-6">HTML</code>, <code class="fs-6">CSS</code>,
+                                            <code class="fs-6">Bootstrap</code>, and <code class="fs-6">
+                                            JavaScript</code>. It serves as a platform for exploring
+                                            various catering services, featuring a clean and user-friendly
+                                            interface, intuitive navigation, and a modern design.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <button style="z-index:0;" class="carousel-control-prev" type="button"
+                        data-bs-target="#carouselWorksControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button style="z-index:0;" class="carousel-control-next" type="button"
+                        data-bs-target="#carouselWorksControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-            </section>
-            <section id="experience" class="container-fluid py-5 px-md-5 min-vh-100">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 text-end">
-                            <h3 class="text-lighter fw-bold">Experiences</h3>
-                        </div>
-                        <hr style="width:55%;" class="ms-auto">
-                        <div class="col-lg-6 ms-auto text-end">
-                            <p class="text-primary font-italic">
-                                To be experienced.
-                            </p>
+            </div>
+        </section>
+        <section id="contact" class="container-fluid py-5 px-md-5 min-vh-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-end">
+                        <h3 class="text-lighter fw-bold">Contact Me</h3>
+                        <hr class="w-50 ms-auto">
+                    </div>
+                    <div class="col-lg-6 ms-auto text-end">
+                        <p class="text-primary">
+                            If you'd like to get in touch with me, feel free to reach out via email or any of my
+                            social media accounts below!
+                        </p>
+                        <div class="d-flex justify-content-end fs-3">
+                            <a href="mailto:jessee.ryan15@gmail.com" class="text-decoration-none text-light">
+                                <i class="bi bi-envelope-fill me-2"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/jessee-ryan-jacob-rompas-effendi-0b1b3b1b4/"
+                                class="text-decoration-none text-light">
+                                <i class="bi bi-linkedin me-2"></i>
+                            </a>
+                            <a href="https://www.instagram.com/jessee.re/" class="text-decoration-none text-light">
+                                <i class="bi bi-instagram me-2"></i>
+                            </a>
+                            <a href="https://github.com/not-jess" class="text-decoration-none text-light">
+                                <i class="bi bi-github me-2"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
-            </section>
-            <section id="work" class="container-fluid py-5 px-md-5 min-vh-100">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 text-start">
-                            <h3 class="text-lighter fw-bold">Works</h3>
-                        </div>
-                        <hr style="width:55%" class="me-auto">
-                        <div class="col-lg-6 me-auto text-start">
-                            <p class="text-primary font-italic">
-                                <a href="https://github.com/not-jess">See github for more.</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="contact" class="container-fluid py-5 px-md-5 min-vh-100">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 text-end">
-                            <h3 class="text-lighter fw-bold">Contact Me</h3>
-                        </div>
-                        <hr style="width:55%;" class="ms-auto">
-                        <div class="col-lg-6 ms-auto text-end">
-                            <p class="text-primary">
-                                If you'd like to get in touch with me, feel free to reach out via email or any of my
-                                social media accounts below!
-                            </p>
-                            <div class="d-flex justify-content-end fs-3">
-                                <a href="mailto:jessee.ryan15@gmail.com" class="text-decoration-none text-light">
-                                    <i class="bi bi-envelope-fill me-2"></i>
-                                </a>
-                                <a href="https://www.linkedin.com/in/jessee-ryan-jacob-rompas-effendi-0b1b3b1b4/"
-                                    class="text-decoration-none text-light">
-                                    <i class="bi bi-linkedin me-2"></i>
-                                </a>
-                                <a href="https://www.instagram.com/profile/jessee.re/"
-                                    class="text-decoration-none text-light">
-                                    <i class="bi bi-instagram me-2"></i>
-                                </a>
-                                <a href="https://github.com/not-jess" class="text-decoration-none text-light">
-                                    <i class="bi bi-github me-2"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-    </div>
+            </div>
+        </section>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
         </script>

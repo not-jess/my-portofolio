@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 // Manually add scrolled-down to hide the navbar after clicking
                 el_autohide.classList.remove('scrolled-up');
                 el_autohide.classList.add('scrolled-down');
-            }, 750); // Adjust timeout duration as needed based on scroll duration
+            }, 750); 
         });
     });
 });

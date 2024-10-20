@@ -1,4 +1,4 @@
-/* over bootstrap */
+/* override bootstrap */
 
 body {
   font-family: "Source Code Pro", monospace!important;
@@ -65,11 +65,6 @@ body {
 .border-lighter{
     border-color: #CDDDDD!important;
 }
-/* content  */
-/* #content {
-    padding-left: 5em;
-    padding-right: 5em;
-} */
 
 /* nav */
 .scrolled-down{
@@ -105,39 +100,32 @@ body {
     }
 }
 
-.intro-pe-11em {
-    padding-right: 11em;
-}
-
-
-
-/*  phone */
-@media (max-width: 576px) {
-    .intro-pe-11em {
-        padding-right: 0;
-    }
-}
-/* tablet */
-@media (min-width: 768px) and (max-width: 992px) {
-    .intro-pe-11em {
-        padding-right: 5em;
-    }
-}
-
 /* about */
 .tech-logo {
-    height: 65px!important;
+    height: 63px!important;
 }
-
-/* SMALL phone */
-@media (max-width: 400px) {
-    /* .tech-logo {
-        margin-top:1em;
-    } */
+.tech-bootstrap {
+    height: 55px!important;
 }
 
 /* phone */
-@media (max-width: 576px) {
+@media (max-width: 460px) {
+    .tech-logo, .tech-bootstrap {
+        margin-left: 0.50rem!important;
+        margin-right: 0.50rem!important;
+    }
+}
+@media (max-width: 360px) {
+    .tech-logo {
+        height: 45px!important;
+    }
+    .tech-bootstrap {
+        height: 40px!important;
+    }
+}
+
+/* SMALLEST phone */
+@media (max-width: 320px) {
     .flex-wrap-mobile {
         flex-wrap: wrap;
     }
