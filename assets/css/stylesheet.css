@@ -100,6 +100,56 @@ body {
     }
 }
 
+/* profile */
+#face {
+    background-color: #333132; 
+    border-color: black!important;
+    height: 300px; 
+    min-width: 200px; 
+    min-height: 200px; 
+    max-width: 350px; 
+    max-height: 350px; 
+    border-radius: 50% 50% 25% 25%;
+}
+
+#eyes {
+    gap: 2rem;
+    transform: scale(1.2) translateY(-30%);
+}
+
+.eye {
+    aspect-ratio: 16 / 9; 
+    min-width: 50px; 
+    min-height: 70px; 
+    max-width: 350px; 
+    max-height: 350px;
+    overflow:hidden;
+    background-color: #F1EEE7;
+}
+
+#left-eye {
+    transform: rotate(20deg);
+    /* clip-path: polygon(5% 50%, 20% 10%, 80% 10%, 95% 50%, 80% 90%, 20% 90%); */
+}
+
+#right-eye {
+    transform: rotate(-20deg);
+}
+
+.pupil {
+    aspect-ratio: 16 / 9!important; 
+    height: 36px; 
+    width:25%;  
+    border-radius: 50%;
+}
+
+#left-pupil {
+    transform: translateX(-75%) rotate(-20deg);
+}
+#right-pupil {
+    transform: translateX(75%) rotate(20deg);
+}
+
 /* about */
 .tech-logo {
     height: 63px!important;
