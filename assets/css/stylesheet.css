@@ -101,26 +101,22 @@ body {
 }
 
 /* profile */
-#profile, #face, #ears, #eyes {
+#profile, #cat, #face, #ears, #eyes {
   min-height: 0;
   min-width: 0;
 }
 
-#profile {
-    /* height: auto; */
-    /* min-height: 365px; */
+#cat {
     height: 365px;
-    overflow: visible;
-}
-
-#ears, #face {
     width: 270px;
+    overflow: visible;
 }
 
 #ears {
     transform: translateY(40%) scaleY(1.2);
-    height: 20rem!important;
-    gap: 1rem;
+    height: 100%!important;
+    width: 100%;
+    gap: 10%;
     z-index:2;
 }
 
@@ -128,13 +124,11 @@ body {
     position: relative;
     width: 45%;
     height: 100%;
-    /* border: 25px solid #391316; */
     border-radius: 50% 50%;
     -webkit-clip-path: ellipse(30% 45% at 50% 50%);
     clip-path: ellipse(30% 45% at 50% 50%);
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
-    /* overflow:hidden; */
     background-color: #323031;
 }
 
@@ -167,7 +161,7 @@ body {
 }
 
 #face {
-    height: 30rem!important; 
+    height: 125%!important; 
     background-color: #333132; 
     border: 3px solid #391316;
     border-radius: 50% 50% 36% 36%;
@@ -176,7 +170,7 @@ body {
 
 #eyes {
     height: 30%;
-    gap: 1em;
+    gap: 5%;
     transform: translateY(-30%);
 }
 
@@ -210,12 +204,12 @@ body {
     transform: translateX(75%) rotate(20deg);
 }
 
-.nose {
-    width: 20px;
-    height: 20px;
+#nose {
+    width: 6.2%;
+    height: 30%;
     background-color: #E2A876;
     border-top-left-radius: 150px;
-    border: 1px solid #3A1E23;
+    border: 1px;
     border-right: 0;
     border-bottom: 0;
     
@@ -223,19 +217,39 @@ body {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 
-    transform: translateY(40px) rotate(45deg) ;
+    transform: translateY(200%) rotate(45deg) ;
 }
 
-.whiskers {
-    
+#whiskers {
+    gap: 36%;
+    transform: translateY(10%);
 }
 
-.left-whiskers {
-
+#left-whiskers, #right-whiskers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.right-whiskers {
+#left-whiskers {
+    transform: translateX(-75%) rotate(-10deg);
+}
 
+#right-whiskers {
+    transform: translateX(75%) rotate(10deg);
+}
+
+#left-top-whisker {
+    transform: rotate(20deg) translateX(-5%) translateY(-300%)
+}
+
+#right-top-whisker {
+    transform: rotate(-20deg) translateX(5%) translateY(-300%)
+}
+
+.whisker {
+    border-top: 4px solid #322520;
+    width: 77px;
 }
 
 /* about */
