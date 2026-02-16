@@ -101,8 +101,16 @@ body {
 }
 
 /* profile */
+#profile, #face, #ears, #eyes {
+  min-height: 0;
+  min-width: 0;
+}
+
 #profile {
+    /* height: auto; */
+    /* min-height: 365px; */
     height: 365px;
+    overflow: visible;
 }
 
 #ears, #face {
@@ -122,7 +130,10 @@ body {
     height: 100%;
     /* border: 25px solid #391316; */
     border-radius: 50% 50%;
+    -webkit-clip-path: ellipse(30% 45% at 50% 50%);
     clip-path: ellipse(30% 45% at 50% 50%);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
     /* overflow:hidden; */
     background-color: #323031;
 }
@@ -139,7 +150,10 @@ body {
     width: 75%;
     height: 100%;
     /* border-radius: 50% 50%; */
+    -webkit-clip-path: ellipse(30% 50% at 50% 50%);
     clip-path: ellipse(30% 50% at 50% 50%);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
     overflow:hidden;
     background-color: #70789C;
 }
