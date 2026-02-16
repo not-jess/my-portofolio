@@ -176,7 +176,7 @@ body {
 
 #eyes {
     height: 30%;
-    gap: 2em;
+    gap: 1em;
     transform: translateY(-30%);
 }
 
@@ -208,6 +208,34 @@ body {
 }
 #right-pupil {
     transform: translateX(75%) rotate(20deg);
+}
+
+.nose {
+    width: 20px;
+    height: 20px;
+    background-color: #E2A876;
+    border-top-left-radius: 150px;
+    border: 1px solid #3A1E23;
+    border-right: 0;
+    border-bottom: 0;
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    transform: translateY(40px) rotate(45deg) ;
+}
+
+.whiskers {
+    
+}
+
+.left-whiskers {
+
+}
+
+.right-whiskers {
+
 }
 
 /* about */
