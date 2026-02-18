@@ -266,6 +266,12 @@ body {
         margin-left: 0.50rem!important;
         margin-right: 0.50rem!important;
     }
+
+    #cat {
+        height: 300px;
+        width: 216px;
+        overflow: visible;
+    }
 }
 @media (max-width: 360px) {
     .tech-logo {
