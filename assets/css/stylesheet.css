@@ -260,6 +260,11 @@ body {
     height: 55px!important;
 }
 
+.tech-terms {
+  color: #d63384;
+  word-wrap: break-word;
+}
+
 /* phone */
 @media (max-width: 460px) {
     .tech-logo, .tech-bootstrap {
